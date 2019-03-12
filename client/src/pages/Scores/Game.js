@@ -21,7 +21,7 @@ let themeSong = new Audio("./avengsong.mp3");
 class Game extends Component {
     state = {
         Characters,
-
+        
         score: 0,
         topScore: "",
         clicked: [],
@@ -41,8 +41,10 @@ class Game extends Component {
         API.getTop()
 
             .then(res => {
-                console.log(res)
-                this.setState({ topScore: res.data.score })
+            
+                console.log(res.data[0].score);
+
+                this.setState({ topScore:res.data[0].score })
             })
 
             .catch(err => console.log(err));
@@ -99,6 +101,9 @@ class Game extends Component {
             isbasic = true;
             isadvanced1 = false;
             isadvanced2 = false;
+            deal= Characters.Characters.round1
+           
+
         }
         else {
 
@@ -124,9 +129,9 @@ class Game extends Component {
             deal = Characters.Characters.round2;
         }
 
-        if (score === 22) {
-            score = 22;
-            message = "you have beat the second level would you like to try the next level";
+        if (score === 67) {
+            score = 67;
+            message = "You Win Game Over";
             levels.play();
             level2.play();
             clicked = [];
@@ -135,6 +140,8 @@ class Game extends Component {
             isadvanced2 = true;
             deal = Characters.Characters.round3;
         }
+
+
 
         this.setState({ deal, score, topScore, clicked, message, isbasic, isadvanced1, isadvanced2 })
 

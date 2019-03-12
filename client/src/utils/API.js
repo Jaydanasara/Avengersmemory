@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all books
   getScores: function() {
-    return axios.get("/api/scores");
+    return axios.get("/api/scores/scores");
   },
   // Gets the book with the given id
   getTop: function() {
