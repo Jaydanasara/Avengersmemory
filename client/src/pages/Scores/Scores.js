@@ -100,7 +100,7 @@ class Scores extends Component {
           <Typography variant="h6" color="inherit" className="grow">
           <Button onClick={this.musicToggle}><img className = "music" src = "./music-player.png" /></Button>
           <a  href="/">
-        Memory Game
+        Avengers Memory Game
      </a>
      <img className = "high" src = "./highScores.gif" />
           </Typography> 

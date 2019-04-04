@@ -246,13 +246,13 @@ class Game extends Component {
                             <Typography variant="h6" color="inherit" >
                                 <Button onClick={this.musicToggle}><img className="music" src="./music-player.png" /></Button>
                                 <a href="/">
-                                    Memory Game
+                                   Avengers Memory Game
      </a>
                             </Typography>
 
                             <TopScore> Score: {this.state.score} | | Top Score: {this.state.topScore}<p>View <a href="/Scores"   >Top Scores </a> </p></TopScore>
                             <div className="signOut">
-                                <Grid container justify="center" alignItems="center">
+                                <Grid container justify="center" alignItems="center" > 
                                     <Button className="back"><a href="/">◀◀◀</a> </Button>
                                     <Avatar alt="" src={firebase.auth().currentUser.photoURL} />
 
