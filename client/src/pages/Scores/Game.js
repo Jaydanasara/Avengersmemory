@@ -128,10 +128,9 @@ class Game extends Component {
             isadvanced1 = true;
             deal = Characters.Characters.round2;
         }
-
-        if (score === 67) {
-            score = 67;
-            message = "You Win Game Over";
+        if (score === 34) {
+            score = 34;
+            message = "YAY!!! You have beat the second level would you like to try the next level 👍";
             levels.play();
             level2.play();
             clicked = [];
@@ -139,6 +138,18 @@ class Game extends Component {
             isadvanced1 = false;
             isadvanced2 = true;
             deal = Characters.Characters.round3;
+        }
+        if (score === 67) {
+            score = 67;
+            message = "You Win Game Over";
+            levels.play();
+            level2.play();
+            clicked = [];
+            isbasic = true;
+            isadvanced1 = false;
+            isadvanced2 = false;
+            deal= Characters.Characters.round1
+           
         }
 
 
