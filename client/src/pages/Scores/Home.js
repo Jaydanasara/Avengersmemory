@@ -26,7 +26,7 @@ function Home() {
         
           <Typography variant="h6" color="inherit">
           <a className="navbar-brand" href="/">
-        Memory Game
+         Avengers Memory Game
      </a>
      </Typography>
     
