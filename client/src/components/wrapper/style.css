@@ -13,3 +13,18 @@
   align-content: flex-start;
   overflow: auto;
 }
+
+@media(max-width:600px){
+  .wrapper{
+    
+     
+      
+          width: 400px;
+      
+          height: 1000px;
+          
+     
+  }
+
+
+}
